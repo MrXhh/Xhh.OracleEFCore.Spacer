@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>Oracle.EntityFrameworkCore</RootNamespace>
+    <LangVersion>Latest</LangVersion>
   </PropertyGroup>
 
   <ItemGroup>
@@ -15,6 +16,10 @@
     <Compile Include="..\Shared\OracleTraceFuncName.cs" />
     <Compile Include="..\Shared\OracleTraceTag.cs" />
     <Compile Include="..\Shared\Trace.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Oracle.EntityFrameworkCore" Version="2.19.70" />
   </ItemGroup>
 
 </Project>
