@@ -1,8 +1,20 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>Oracle.EntityFrameworkCore</RootNamespace>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile LinkBase="JetBrains\Annotations" Include="..\Shared\JetBrains\Annotations\**" />
+    <Compile LinkBase="Microsoft\CodeAnalysis" Include="..\Shared\Microsoft\CodeAnalysis\**" />
+    <Compile LinkBase="System" Include="..\Shared\System\**" />
+    <Compile LinkBase="Utilities" Include="..\Shared\Utilities\**" />
+    <Compile Include="..\Shared\ConfigHelper.cs" />
+    <Compile Include="..\Shared\OracleTraceClassName.cs" />
+    <Compile Include="..\Shared\OracleTraceFuncName.cs" />
+    <Compile Include="..\Shared\OracleTraceTag.cs" />
+    <Compile Include="..\Shared\Trace.cs" />
+  </ItemGroup>
 
 </Project>
